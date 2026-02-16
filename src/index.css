@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 228 15% 4%;
+    --foreground: 0 0% 96%;
+    --card: 222 16% 13%;
+    --card-foreground: 0 0% 96%;
+    --popover: 222 16% 13%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 42 52% 54%;
+    --primary-foreground: 228 15% 4%;
+    --secondary: 222 16% 18%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 222 12% 22%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 0 66% 33%;
+    --accent-foreground: 0 0% 96%;
+    --destructive: 0 66% 33%;
+    --destructive-foreground: 0 0% 96%;
+    --border: 222 16% 20%;
+    --input: 222 16% 25%;
+    --ring: 42 52% 54%;
+    --radius: 0.75rem;
+    --gold: 42 52% 54%;
+    --gold-light: 42 60% 65%;
+    --gold-dark: 42 45% 40%;
+    --sidebar-background: 222 16% 8%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 42 52% 54%;
+    --sidebar-primary-foreground: 228 15% 4%;
+    --sidebar-accent: 222 16% 15%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 222 16% 20%;
+    --sidebar-ring: 42 52% 54%;
+  }
+
+  .dark {
+    --background: 228 15% 4%;
+    --foreground: 0 0% 96%;
+    --card: 222 16% 13%;
+    --card-foreground: 0 0% 96%;
+    --popover: 222 16% 13%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 42 52% 54%;
+    --primary-foreground: 228 15% 4%;
+    --secondary: 222 16% 18%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 222 12% 22%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 0 66% 33%;
+    --accent-foreground: 0 0% 96%;
+    --destructive: 0 66% 33%;
+    --destructive-foreground: 0 0% 96%;
+    --border: 222 16% 20%;
+    --input: 222 16% 25%;
+    --ring: 42 52% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card/40 backdrop-blur-xl border border-border/30;
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(42, 52%, 54%), hsl(42, 60%, 65%));
+  }
+  .gold-text {
+    background: linear-gradient(135deg, hsl(42, 52%, 54%), hsl(42, 60%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .luxury-shadow {
+    box-shadow: 0 20px 60px -15px hsl(42 52% 54% / 0.15),
+                0 0 40px -10px hsl(42 52% 54% / 0.1);
+  }
+  .section-padding {
+    @apply py-20 md:py-32 px-4 md:px-8;
+  }
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+  }
+  .facebook-btn {
+    background-color: #1877F2;
+    color: white;
+  }
+
+  /* Gold hover glow for interactive elements */
+  .gold-hover-glow {
+    position: relative;
+    transition: box-shadow 0.4s ease;
+  }
+  .gold-hover-glow:hover {
+    box-shadow: 0 0 30px -5px hsl(42 52% 54% / 0.3),
+                0 0 60px -10px hsl(42 52% 54% / 0.15);
+  }
+
+  /* Cursor change near car cards */
+  .cursor-luxury {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23C9A14A' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E") 12 12, pointer;
+  }
+
+  /* Gold ripple effect */
+  .gold-ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  .gold-ripple::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, hsl(42 52% 54% / 0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .gold-ripple:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(228, 15%, 4%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(42, 52%, 54%, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(42, 52%, 54%, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero: animated twinkling stars background */
+@keyframes hero-star-twinkle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes hero-star-twinkle-slow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.85; }
+}
+
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-stars::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(2px 2px at 100px 80px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 180px 40px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 260px 120px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 340px 70px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 420px 160px, rgba(201,161,74,0.5), transparent),
+    radial-gradient(1px 1px at 50px 150px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 140px 200px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 230px 180px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 310px 50px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 390px 220px, rgba(201,161,74,0.4), transparent);
+  background-size: 450px 250px;
+  background-repeat: repeat;
+  animation: hero-star-twinkle 3s ease-in-out infinite;
+}
+
+.hero-stars::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 70px 60px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 160px 20px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 250px 140px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 330px 90px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 40px 200px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 200px 250px, rgba(201,161,74,0.45), transparent),
+    radial-gradient(2px 2px at 280px 30px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 370px 170px, rgba(255,255,255,0.5), transparent);
+  background-size: 420px 270px;
+  background-repeat: repeat;
+  animation: hero-star-twinkle-slow 4s ease-in-out infinite 0.8s;
+}
