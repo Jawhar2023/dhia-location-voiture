@@ -15,7 +15,7 @@ export default function About() {
         <div className="container mx-auto">
           <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto mb-20">
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
-              À propos de <span className="gold-text">[y business name]</span>
+              À propos de <span className="gold-text">Dhokkar Rent A Car</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Votre partenaire de confiance pour la location de voitures à M'saken. Nous offrons
@@ -29,7 +29,7 @@ export default function About() {
                 Notre <span className="gold-text">mission</span>
               </h2>
               <p className="text-muted-foreground mb-4">
-                Chez [y business name], nous croyons que chaque trajet doit être une expérience
+                Chez Dhokkar Rent A Car, nous croyons que chaque trajet doit être une expérience
                 exceptionnelle. Nous allions véhicules de qualité et attention personnalisée pour
                 que nos clients profitent du confort, de la sécurité et d'un service soigné.
               </p>

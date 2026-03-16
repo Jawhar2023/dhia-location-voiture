@@ -1,4 +1,4 @@
-# Design Analysis & Improvements — [y business name]
+# Design Analysis & Improvements — Dhokkar Rent A Car
 
 ## 1. Overall Design Analysis
 
@@ -45,7 +45,7 @@
 
 ### Font pairing (Google Fonts)
 
-- **Headings / display:** **Fraunces** or **Instrument Serif** — distinctive, premium, good for the brand name and section titles.
+- **Headings / display:** **Fraunces** or **Instrument Serif** — distinctive, premium, good for “Dhokkar” and section titles.
 - **Body / UI:** **Plus Jakarta Sans** — modern, readable, professional (SaaS-style).
 
 ### Hierarchy

@@ -20,14 +20,14 @@ export default function WhatsAppButton() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ duration: 0.18 }}
-              className="w-12 h-12 rounded-full flex items-center justify-center shadow-md bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-400"
-              aria-label="Ouvrir Instagram"
+              exit={{ opacity: 0, y: 12 }}
+              transition={{ duration: 0.2 }}
+              className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg bg-gradient-to-br from-[#f09433] via-[#e1306c] to-[#405de6] hover:scale-105 transition-transform"
+              aria-label="Instagram"
             >
-              <Instagram className="w-5 h-5 text-white" />
+              <Instagram className="w-6 h-6 text-white" />
             </motion.a>
 
             <motion.a
@@ -35,29 +35,29 @@ export default function WhatsAppButton() {
               href={FACEBOOK_URL}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ duration: 0.18, delay: 0.04 }}
-              className="w-12 h-12 rounded-full flex items-center justify-center shadow-md facebook-btn"
-              aria-label="Ouvrir Facebook"
+              exit={{ opacity: 0, y: 12 }}
+              transition={{ duration: 0.2, delay: 0.03 }}
+              className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg bg-[#1877F2] hover:scale-105 transition-transform"
+              aria-label="Facebook"
             >
-              <Facebook className="w-5 h-5 text-white" />
+              <Facebook className="w-6 h-6 text-white" />
             </motion.a>
 
             <motion.a
-              key="whatsapp-secondary"
+              key="whatsapp"
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ duration: 0.18, delay: 0.08 }}
-              className="w-12 h-12 rounded-full flex items-center justify-center shadow-md whatsapp-btn"
+              exit={{ opacity: 0, y: 12 }}
+              transition={{ duration: 0.2, delay: 0.06 }}
+              className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg whatsapp-btn hover:scale-105 transition-transform"
               aria-label="WhatsApp"
             >
-              <MessageCircle className="w-5 h-5 text-white" />
+              <MessageCircle className="w-6 h-6 text-white" />
             </motion.a>
           </>
         )}
@@ -66,8 +66,8 @@ export default function WhatsAppButton() {
       <motion.button
         type="button"
         onClick={() => setOpen(prev => !prev)}
-        className="w-14 h-14 rounded-full whatsapp-btn flex items-center justify-center shadow-lg whatsapp-float border-2 border-white/80"
-        aria-label="Ouvrir les contacts"
+        className="w-14 h-14 rounded-full whatsapp-btn flex items-center justify-center shadow-lg whatsapp-float border-2 border-white"
+        aria-label={open ? 'Fermer le menu' : 'Ouvrir les contacts'}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}

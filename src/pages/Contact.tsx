@@ -17,7 +17,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
-            Contact <span className="gold-text">[y business name]</span>
+            Contact <span className="gold-text">Dhokkar</span>
           </h1>
           <p className="text-muted-foreground">Réservez un créneau ou appelez-nous</p>
         </motion.div>
@@ -118,7 +118,7 @@ export default function Contact() {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                title="[y business name] - M'saken"
+                title="Dhokkar Rent A Car - M'saken"
               />
             </div>
           </motion.div>

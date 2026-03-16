@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-display text-xl font-semibold gold-text mb-4">[y business name]</h3>
+            <h3 className="font-display text-xl font-semibold gold-text mb-4">DHOKKAR RENT A CAR</h3>
             <p className="text-sm text-muted-foreground">
               Agence de location de voitures à M'saken. Av. 20 mars.
             </p>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border/30 mt-12 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">© 2026 [y business name]. Tous droits réservés.</p>
+          <p className="text-sm text-muted-foreground">© 2026 Dhokkar Rent A Car. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

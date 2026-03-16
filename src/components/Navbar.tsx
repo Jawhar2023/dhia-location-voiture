@@ -43,7 +43,7 @@ export default function Navbar() {
             isHeroSection ? 'text-white hover:text-primary/90' : 'gold-text'
           }`}
         >
-          [y business name]
+          DHOKKAR RENT A CAR
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

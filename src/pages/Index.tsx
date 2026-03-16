@@ -207,7 +207,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <motion.div {...fadeInUp} className="text-center mb-20">
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-              Pourquoi choisir <span className="gold-text">[y business name]</span>
+              Pourquoi choisir <span className="gold-text">Dhokkar Rent A Car</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
               Location de voitures avec un service personnalisé et de qualité
@@ -326,7 +326,7 @@ export default function Index() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="[y business name] - M'saken"
+              title="Dhokkar Rent A Car - M'saken"
             />
           </motion.div>
         </div>

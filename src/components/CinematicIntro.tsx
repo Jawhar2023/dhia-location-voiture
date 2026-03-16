@@ -49,7 +49,7 @@ export default function CinematicIntro({ onComplete }: { onComplete: () => void 
               transition={{ delay: 0.5, duration: 1 }}
               className="font-serif text-4xl md:text-6xl font-bold gold-text mb-4"
             >
-              [y business name]
+              DHOKKAR RENT A CAR
             </motion.h1>
 
             <motion.div
