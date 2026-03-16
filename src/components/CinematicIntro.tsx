@@ -47,25 +47,33 @@ export default function CinematicIntro({ onComplete }: { onComplete: () => void 
               initial={{ opacity: 0, scale: 0.8, letterSpacing: '0.1em' }}
               animate={{ opacity: 1, scale: 1, letterSpacing: '0.2em' }}
               transition={{ delay: 0.5, duration: 1 }}
-              className="font-serif text-4xl md:text-7xl font-bold gold-text mb-4"
+              className="font-serif text-4xl md:text-6xl font-bold gold-text mb-4"
             >
-              DHIA RENT A CAR
+              [y business name]
             </motion.h1>
 
             <motion.div
               initial={{ opacity: 0, width: 0 }}
               animate={{ opacity: 1, width: '6rem' }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="h-0.5 gold-gradient mx-auto mb-4"
+              className="h-0.5 gold-gradient mx-auto mb-3"
             />
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.5, duration: 0.6 }}
-              className="text-xs uppercase tracking-[0.4em] text-muted-foreground"
+              transition={{ delay: 1.4, duration: 0.6 }}
+              className="text-xs uppercase tracking-[0.3em] text-muted-foreground"
             >
-              VIP Edition
+              Agence de location de voitures
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.5 }}
+              className="text-sm text-muted-foreground mt-2"
+            >
+              Av. 20 mars, M'saken · 3,4 (5) · 5 avis
             </motion.p>
           </div>
 

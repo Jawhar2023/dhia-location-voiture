@@ -11,20 +11,20 @@ export default function CarDetail() {
   if (!car) {
     return (
       <div className="section-padding text-center">
-        <h1 className="font-serif text-4xl font-bold mb-4">Car Not Found</h1>
+        <h1 className="font-serif text-4xl font-bold mb-4">Véhicule introuvable</h1>
         <Button asChild>
-          <Link to="/fleet">Back to Fleet</Link>
+          <Link to="/fleet">Retour à la flotte</Link>
         </Button>
       </div>
     );
   }
 
   const specs = [
-    { icon: DoorOpen, label: `${car.doors} Doors` },
-    { icon: Users, label: `${car.seats} Seats` },
+    { icon: DoorOpen, label: `${car.doors} portes` },
+    { icon: Users, label: `${car.seats} places` },
     { icon: Fuel, label: car.fuel },
     { icon: Settings, label: car.transmission },
-    { icon: Snowflake, label: car.ac ? 'AC' : 'No AC' },
+    { icon: Snowflake, label: car.ac ? 'Climatisation' : 'Sans clim' },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function CarDetail() {
             to="/fleet"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4" /> Back to Fleet
+            <ArrowLeft className="w-4 h-4" /> Retour à la flotte
           </Link>
         </motion.div>
 
@@ -61,7 +61,7 @@ export default function CarDetail() {
           >
             <span className="text-xs font-medium uppercase tracking-widest text-primary">{car.type}</span>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mt-2 mb-4">{car.name}</h1>
-            <p className="text-lg gold-text font-semibold mb-6">{car.pricePerDay} TND / day</p>
+            <p className="text-lg gold-text font-semibold mb-6">{car.pricePerDay} TND / jour</p>
             <p className="text-muted-foreground mb-8">{car.description}</p>
 
             <div className="grid grid-cols-3 gap-4 mb-8">
@@ -74,7 +74,7 @@ export default function CarDetail() {
             </div>
 
             <div className="mb-8">
-              <h3 className="font-serif text-lg font-semibold mb-3">Perfect For</h3>
+              <h3 className="font-serif text-lg font-semibold mb-3">Idéal pour</h3>
               <div className="flex flex-wrap gap-2">
                 {car.idealFor.map(use => (
                   <span key={use} className="px-4 py-1.5 rounded-full text-xs font-medium glass text-muted-foreground">
@@ -86,12 +86,12 @@ export default function CarDetail() {
 
             <div className="flex flex-wrap gap-3">
               <Button size="lg" asChild>
-                <a href="tel:+21697657778">
-                  <Phone className="w-4 h-4 mr-2" /> Call to Book
+                <a href="tel:+21624621605">
+                  <Phone className="w-4 h-4 mr-2" /> Appeler pour réserver
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://wa.me/21697657778" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/21624621605" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp
                 </a>
               </Button>

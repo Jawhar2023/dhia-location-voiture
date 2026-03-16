@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 import { Star, Clock, MapPin, Shield, Facebook, CheckCircle } from 'lucide-react';
 
 const badges = [
-  { icon: Star, label: '5.0 Rating', value: 'Google Verified' },
-  { icon: CheckCircle, label: '25+ Reviews', value: 'Real Clients' },
-  { icon: Clock, label: '24/7 Open', value: 'Always Available' },
-  { icon: MapPin, label: 'Location Verified', value: 'Ariana, Tunisia' },
-  { icon: Shield, label: 'Fully Insured', value: 'All Vehicles' },
-  { icon: Facebook, label: 'Social Verified', value: 'Active Page' },
+  { icon: Star, label: 'Note 3,4 (5)', value: 'Google' },
+  { icon: CheckCircle, label: '5+ avis', value: 'Vrais clients' },
+  { icon: Clock, label: 'Ouvert', value: 'Ferme à 15:30' },
+  { icon: MapPin, label: 'Adresse vérifiée', value: "M'saken" },
+  { icon: Shield, label: 'Tous assurés', value: 'Tous les véhicules' },
+  { icon: Facebook, label: 'Réseaux', value: 'Page active' },
 ];
 
 export default function TrustWall() {
@@ -21,11 +21,11 @@ export default function TrustWall() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">
-            Why Clients <span className="gold-text">Trust Us</span>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
+            Pourquoi nos clients nous <span className="gold-text">font confiance</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Verified credentials that remove all hesitation
+            Des garanties qui enlèvent toute hésitation
           </p>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function TrustWall() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
-                className="glass rounded-2xl p-5 text-center hover:luxury-shadow transition-all duration-500 group"
+                className="card-premium p-5 text-center group"
               >
                 <div className="w-11 h-11 rounded-full gold-gradient flex items-center justify-center mx-auto mb-3 group-hover:animate-pulse-gold transition-all">
                   <Icon className="w-5 h-5 text-primary-foreground" />

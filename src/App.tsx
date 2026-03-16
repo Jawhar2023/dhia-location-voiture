@@ -19,12 +19,12 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [showIntro, setShowIntro] = useState(() => {
-    return !sessionStorage.getItem('dhia-intro-seen');
+    return !sessionStorage.getItem('dhokkar-intro-seen');
   });
 
   const handleIntroComplete = useCallback(() => {
     setShowIntro(false);
-    sessionStorage.setItem('dhia-intro-seen', 'true');
+    sessionStorage.setItem('dhokkar-intro-seen', 'true');
   }, []);
 
   return (

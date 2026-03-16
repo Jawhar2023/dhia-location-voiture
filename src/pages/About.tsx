@@ -15,37 +15,37 @@ export default function About() {
         <div className="container mx-auto">
           <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto mb-20">
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
-              About <span className="gold-text">Dhia Rent A Car</span>
+              À propos de <span className="gold-text">[y business name]</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Your trusted partner for premium car rental in Ariana, Tunisia. We deliver excellence,
-              reliability, and a VIP experience with every ride.
+              Votre partenaire de confiance pour la location de voitures à M'saken. Nous offrons
+              excellence, fiabilité et un service de qualité à chaque trajet.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <motion.div {...fadeInUp}>
               <h2 className="font-serif text-3xl font-bold mb-6">
-                Our <span className="gold-text">Mission</span>
+                Notre <span className="gold-text">mission</span>
               </h2>
               <p className="text-muted-foreground mb-4">
-                At Dhia Rent A Car, we believe that every journey should be an exceptional experience.
-                We combine quality vehicles with personalized attention to detail, ensuring our clients
-                enjoy comfort, safety, and luxury at every turn.
+                Chez [y business name], nous croyons que chaque trajet doit être une expérience
+                exceptionnelle. Nous allions véhicules de qualité et attention personnalisée pour
+                que nos clients profitent du confort, de la sécurité et d'un service soigné.
               </p>
               <p className="text-muted-foreground">
-                Located inside the Ariana bus station (Terminus), we're easily accessible and open
-                24 hours a day, 7 days a week. Whether you need a car for a business trip, airport
-                transfer, or a weekend getaway, we're here for you.
+                Situés Av. 20 mars à M'saken, nous sommes facilement accessibles. Que vous ayez
+                besoin d'une voiture pour un déplacement professionnel, un transfert aéroport ou
+                un week-end, nous sommes là pour vous.
               </p>
             </motion.div>
 
             <motion.div {...fadeInUp} className="grid grid-cols-2 gap-4">
               {[
-                { value: '5.0', label: 'Google Rating', icon: Star },
-                { value: '24/7', label: 'Always Open', icon: Clock },
-                { value: '25+', label: 'Happy Reviews', icon: Heart },
-                { value: '100%', label: 'Insured Fleet', icon: Shield },
+                { value: '3,4', label: 'Note Google', icon: Star },
+                { value: 'Ouvert', label: 'Horaires', icon: Clock },
+                { value: '5+', label: 'Avis clients', icon: Heart },
+                { value: '100%', label: 'Flotte assurée', icon: Shield },
               ].map(({ value, label, icon: Icon }) => (
                 <div key={label} className="glass rounded-2xl p-6 text-center">
                   <Icon className="w-6 h-6 text-primary mx-auto mb-3" />
@@ -59,9 +59,9 @@ export default function About() {
           <motion.div {...fadeInUp} className="glass rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: Award, title: 'Professional', desc: 'A team dedicated to delivering the highest standards of service.' },
-                { icon: Shield, title: 'Reliable', desc: 'Well-maintained vehicles and transparent pricing you can trust.' },
-                { icon: Heart, title: 'Customer-Focused', desc: 'Your comfort and satisfaction are our top priorities.' },
+                { icon: Award, title: 'Professionnel', desc: 'Une équipe dévouée à un service de qualité.' },
+                { icon: Shield, title: 'Fiable', desc: 'Véhicules bien entretenus et tarifs transparents.' },
+                { icon: Heart, title: 'À l\'écoute', desc: 'Votre confort et satisfaction sont nos priorités.' },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center">
                   <div className="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center mx-auto mb-4">
@@ -78,7 +78,7 @@ export default function About() {
             <div className="flex items-center justify-center gap-2 text-lg">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="text-muted-foreground">
-                Rue De Gharnata, Ariana – Inside Ariana Bus Station (Terminus)
+                Av. 20 mars, M'saken
               </span>
             </div>
           </motion.div>

@@ -6,9 +6,9 @@ import { cars } from '@/data/cars';
 
 const categories = ['all', 'suv', 'city', 'sport'] as const;
 const categoryLabels: Record<string, string> = {
-  all: 'All',
+  all: 'Tout',
   suv: 'SUV',
-  city: 'City',
+  city: 'Ville',
   sport: 'Sport',
 };
 
@@ -26,9 +26,9 @@ export default function Cars() {
           className="text-center mb-12"
         >
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
-            Our <span className="gold-text">VIP Fleet</span>
+            Notre <span className="gold-text">flotte</span>
           </h1>
-          <p className="text-muted-foreground mb-8">Choose your luxury vehicle</p>
+          <p className="text-muted-foreground mb-8">Choisissez votre véhicule</p>
 
           {/* Airport / City Toggle */}
           <div className="inline-flex items-center glass rounded-full p-1 mb-4">
@@ -38,7 +38,7 @@ export default function Cars() {
                 !airportMode ? 'gold-gradient text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              <Building2 className="w-4 h-4" /> City Rental
+              <Building2 className="w-4 h-4" /> Location ville
             </button>
             <button
               onClick={() => setAirportMode(true)}
@@ -46,7 +46,7 @@ export default function Cars() {
                 airportMode ? 'gold-gradient text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              <Plane className="w-4 h-4" /> Airport VIP
+              <Plane className="w-4 h-4" /> Transfert aéroport
             </button>
           </div>
         </motion.div>
@@ -61,23 +61,23 @@ export default function Cars() {
               className="overflow-hidden"
             >
               <div className="glass rounded-2xl p-6 text-center border border-primary/20">
-                <p className="text-xs uppercase tracking-widest text-primary mb-3">Airport VIP Service</p>
+                <p className="text-xs uppercase tracking-widest text-primary mb-3">Service aéroport</p>
                 <div className="flex items-center justify-center gap-8 flex-wrap">
                   <div className="flex items-center gap-2 text-sm">
                     <Plane className="w-4 h-4 text-primary" />
-                    <span>Airport Pickup & Drop-off</span>
+                    <span>Prise en charge & retour aéroport</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Users className="w-4 h-4 text-primary" />
-                    <span>Driver Assistance</span>
+                    <span>Assistance chauffeur</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Star className="w-4 h-4 text-primary" />
-                    <span>Priority Service</span>
+                    <span>Service prioritaire</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Clock className="w-4 h-4 text-primary" />
-                    <span>Flight Tracking</span>
+                    <span>Suivi des vols</span>
                   </div>
                 </div>
               </div>

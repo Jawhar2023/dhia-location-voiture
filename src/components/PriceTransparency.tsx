@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { Shield, Fuel, FileCheck, Eye, CheckCircle } from 'lucide-react';
 
 const policies = [
-  { icon: Shield, title: 'Insurance Included', desc: 'Full coverage on every rental. No extra charges.' },
-  { icon: Fuel, title: 'Clear Fuel Policy', desc: 'Full-to-full. No hidden fuel surcharges.' },
-  { icon: FileCheck, title: 'No Hidden Fees', desc: 'The price you see is the price you pay.' },
-  { icon: Eye, title: 'Transparent Pricing', desc: 'All costs explained upfront before you book.' },
+  { icon: Shield, title: 'Assurance incluse', desc: 'Couverture complète sur chaque location. Sans frais cachés.' },
+  { icon: Fuel, title: 'Carburant clair', desc: 'Plein à l\'arrivée, plein au retour. Pas de suppléments cachés.' },
+  { icon: FileCheck, title: 'Pas de frais cachés', desc: 'Le prix affiché est le prix que vous payez.' },
+  { icon: Eye, title: 'Tarifs transparents', desc: 'Tous les coûts expliqués avant la réservation.' },
 ];
 
 export default function PriceTransparency() {
@@ -19,11 +19,11 @@ export default function PriceTransparency() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">
-            <span className="gold-text">Luxury</span> is Clarity
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
+            <span className="gold-text">Qualité</span> et clarté
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            No surprises. No hidden costs. Just premium service with total transparency.
+            Pas de mauvaises surprises. Pas de coûts cachés. Un service soigné et totalement transparent.
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ export default function PriceTransparency() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="glass rounded-2xl p-8 text-center group hover:luxury-shadow transition-all duration-500"
+                className="card-premium p-8 text-center group"
               >
                 <div className="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center mx-auto mb-6 group-hover:animate-glow transition-all">
                   <Icon className="w-7 h-7 text-primary-foreground" />

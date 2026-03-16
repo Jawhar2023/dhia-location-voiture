@@ -14,14 +14,14 @@ export default function Reviews() {
           className="text-center mb-16"
         >
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
-            Client <span className="gold-text">Reviews</span>
+            Avis <span className="gold-text">clients</span>
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-6 h-6 fill-primary text-primary" />
             ))}
           </div>
-          <p className="text-muted-foreground">5.0 rating from 25+ Google reviews</p>
+          <p className="text-muted-foreground">3,4 (5) sur Google · 5 avis</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -40,11 +40,11 @@ export default function Reviews() {
         <div className="text-center">
           <Button size="lg" asChild>
             <a
-              href="https://search.google.com/local/writereview?placeid=ChIJAa9vJACZAhMR-2HullFL1p8"
+              href="https://search.google.com/local/writereview?placeid=ChIJBZW6IFP1_RIRPe4sg5EPD2k"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Star className="w-4 h-4 mr-2" /> Add Your VIP Review
+              <Star className="w-4 h-4 mr-2" /> Rédiger un avis
             </a>
           </Button>
         </div>
